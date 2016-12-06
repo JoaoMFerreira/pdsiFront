@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Vida Escolar • Colégio da Cidade
+        </title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="css/material.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" href="css/dialog-polyfill.css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+        <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/dialog-polyfill.js"></script>
+    </head>
+
+<body>
+    <div id="tudo">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+        <!-- Barra Superior -->
+        <header class="mdl-layout__header mdl-layout--small-screen-only">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">Vida Escolar</span>
+                <div class="mdl-layout-spacer"></div>
+            </div>
+        </header>
+
+        <!-- Barra Lateral -->
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title top-drawer">
+                <div class="image-cropper">
+                    <img src="img/mina.jpg" class="rounded avatar" />
+                </div>
+                <h5>Maria Silva</h5>    
+                <p>Colégio da Cidade</p>
+            </span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link mdl-js-ripple-effect" href="#"><i class="material-icons">home</i> <span class="menu-item">Home</span></a>
+                <a class="mdl-navigation__link mdl-js-ripple-effect" href="#"><i class="material-icons">event</i> <span class="menu-item">Calendário</span></a>
+                <a class="mdl-navigation__link mdl-js-ripple-effect" href="#"><i class="material-icons">school</i> <span class="menu-item">Disciplinas</span></a>
+                <a class="mdl-navigation__link mdl-js-ripple-effect" href="#"><i class="material-icons">message</i> <span class="menu-item">Mensagens</span></a>
+                <a class="mdl-navigation__link mdl-js-ripple-effect" href="#"><i class="material-icons">help</i> <span class="menu-item">Ajuda</span></a>
+            </nav>
+        </div>
+
+        <main class="mdl-layout__content" id="vertical-center">
+            <div class="center-wrapper">
+                <div class="center-vert">
+                    <div class="page-content mdl-grid mdl-cell--9-col">
+                        <h3 id="main-boasvindas">Bem-vindo(a), Maria!</h3>
+                    </div>
+                    <div class="page-content mdl-grid mdl-cell--9-col">
+
+                        <div class="mdl-cell mdl-cell--6-col mdl-card mdl-shadow--2dp">
+                            <div class="mdl-card__title">
+                                <h3 class="mdl-card__title-text">Próximas Atividades</h3>
+                            </div>
+                            <ul class="mdl-list">
+                                <a class="mdl-list__item" href="#">
+                                    <span class="mdl-list__item-primary-content">Aula 8</span>
+                                    <span class="home-proximasatividades-legenda">
+                                    <i class="material-icons home-proximasatividades-icone">access_time</i> 01/01/2017 10h00 <br>
+                                    <i class="material-icons home-proximasatividades-icone">location_on</i> Sala 210 <br>
+                                    <i class="material-icons home-proximasatividades-icone">class</i> Matemática
+                                    </span>
+                                </a>
+                                <hr class="divider">
+                                <a class="mdl-list__item" href="#">
+                                    <span class="mdl-list__item-primary-content">Prova 1</span>
+                                    <span class="home-proximasatividades-legenda">
+                                    <i class="material-icons home-proximasatividades-icone">access_time</i> 12/03/2017 17h00 <br>
+                                    <i class="material-icons home-proximasatividades-icone">location_on</i> Sala 130 <br>
+                                    <i class="material-icons home-proximasatividades-icone">class</i> Geografia
+                                    </span>
+                                </a>
+                                <hr class="divider">
+                                <a class="mdl-list__item" href="#">
+                                    <span class="mdl-list__item-primary-content">Aula 10</span>
+                                    <span class="home-proximasatividades-legenda">
+                                    <i class="material-icons home-proximasatividades-icone">access_time</i> 10/02/2017 12h00 <br>
+                                    <i class="material-icons home-proximasatividades-icone">location_on</i> Sala 118 <br>
+                                    <i class="material-icons home-proximasatividades-icone">class</i> História
+                                    </span>
+                                </a>
+                            </ul>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Ver Mais</a>
+                            </div>
+                        </div>
+
+                        <div class="mdl-cell mdl-cell--6-col mdl-card mdl-shadow--2dp">
+                            <div class="mdl-card__title">
+                                <h3 class="mdl-card__title-text">Você tem:</h3>
+                            </div>
+                            <ul class="mdl-list">
+                                <a class="mdl-list__item" href="#">
+                                    <span class="mdl-list__item-primary-content"><span class="novidades-numero">3</span> novas notas</span>
+                                </a>
+                                <a class="mdl-list__item" href="#">
+                                    <span class="mdl-list__item-primary-content"><span class="novidades-numero">5</span> novas faltas</span>
+                                </a>
+                                <a class="mdl-list__item" href="#">
+                                    <span class="mdl-list__item-primary-content"><span class="novidades-numero">7</span> novos materiais</span>
+                                </a>
+                                <a class="mdl-list__item" href="#">
+                                    <span class="mdl-list__item-primary-content"><span class="novidades-numero">3</span> novas questões</span>
+                                </a>
+                                <a class="mdl-list__item" href="#">
+                                    <span class="mdl-list__item-primary-content"><span class="novidades-numero">12</span> novas mensagens</span>
+                                </a>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    </div>
+
+    <!-- Modal - Notas -->
+    <dialog class="mdl-dialog mdl-cell mdl-cell--9-col" id="notas-modal">
+        <h4 class="mdl-dialog__title">Notas</h4>
+
+        <!-- Lista de atividades -->
+        <div class="mdl-dialog__content mdl-cell mdl-cell--4-col" style="float:left;">
+            <div id="notas-div-botoes">
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent" id="notas-botao-addatividade">
+                    <i class="material-icons">add</i>
+                </button>
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent disabled" id="notas-botao-editatividade">
+                    <i class="material-icons">edit</i>
+                </button>
+                <div class="mdl-tooltip" data-mdl-for="notas-botao-addatividade">Adicionar Atividade</div>
+                <div class="mdl-tooltip" data-mdl-for="notas-botao-editatividade">Editar Atividade</div>
+            </div>
+            <ul class="mdl-list">
+                <a class="mdl-list__item atividades-item" href="#">
+                    <span class="mdl-list__item-primary-content">Prova 1</span>
+                    <i class="material-icons mdl-cell--hide-phone">keyboard_arrow_right</i>
+                </a>
+                <hr class="divider">
+                <a class="mdl-list__item atividades-item" href="#">
+                    <span class="mdl-list__item-primary-content">Prova 2</span>
+                    <i class="material-icons mdl-cell--hide-phone">keyboard_arrow_right</i>
+                </a>
+                <hr class="divider">
+                <a class="mdl-list__item atividades-item" href="#">
+                    <span class="mdl-list__item-primary-content">Prova 3</span>
+                    <i class="material-icons mdl-cell--hide-phone">keyboard_arrow_right</i>
+                </a>
+            </ul>
+        </div>
+
+        <!-- Lista de alunos e notas -->
+        <div class="mdl-dialog__content mdl-cell mdl-cell--8-col mdl-cell--10-col-phone disabled" id="notas-modal-listaalunos" style="float:right;">
+            <table class="mdl-data-table mdl-js-data-table mdl-cell--12-col notas-table">
+                <colgroup>
+                    <col width="0%" />
+                    <col width="100%" />
+                    <col width="0%" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th class="mdl-data-table__cell--non-numeric">Matrícula</th>
+                        <th class="mdl-data-table__cell--non-numeric mdl-cell--hide-phone">Nome</th>
+                        <th>Nota</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">1234567890</td>
+                        <td class="mdl-data-table__cell--non-numeric nota-nome-aluno mdl-cell--hide-phone">Lohane Vêkanandre Sthephany Smith Bueno de HA HA HA de Raio Laser bala de Icekiss</td>
+                        <td>
+                            <div class="mdl-textfield mdl-js-textfield nota-textfield">
+                                <input class="mdl-textfield__input nota-input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+                                <label class="mdl-textfield__label" for="sample2">Nota</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">1234567890</td>
+                        <td class="mdl-data-table__cell--non-numeric nota-nome-aluno mdl-cell--hide-phone">Maria da Silva</td>
+                        <td>
+                            <div class="mdl-textfield mdl-js-textfield mdl-cell--3-col nota-textfield">
+                                <input class="mdl-textfield__input nota-input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+                                <label class="mdl-textfield__label" for="sample2">Nota</label>
+                                <span class="mdl-textfield__error">Apenas números</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">1234567890</td>
+                        <td class="mdl-data-table__cell--non-numeric nota-nome-aluno mdl-cell--hide-phone">José da Silva</td>
+                        <td>
+                            <div class="mdl-textfield mdl-js-textfield mdl-cell--3-col nota-textfield">
+                                <input class="mdl-textfield__input nota-input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+                                <label class="mdl-textfield__label" for="sample2">Nota</label>
+                                <span class="mdl-textfield__error">Apenas números</span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="mdl-dialog__actions" style="clear:both;">
+            <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary" id="notas-modal-botao-enviar">Enviar</button>
+            <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect" id="notas-modal-botao-fechar">Fechar</button>
+        </div>
+    </dialog>
+
+    <!-- Modal Add Atividade -->
+    <dialog class="mdl-dialog" id="addatividade-modal">
+        <h4 class="mdl-dialog__title">Nova Atividade</h4>
+        <div class="mdl-dialog__content">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="sample3">
+                <label class="mdl-textfield__label" for="sample3">Nome da atividade</label>
+            </div>
+        </div>
+        <div class="mdl-dialog__actions">
+            <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary" id="addatividade-modal-botao-enviar">Enviar</button>
+            <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close" id="addatividade-modal-botao-fechar">Fechar</button>
+        </div>
+    </dialog>
+
+    <!-- Modal Edit Atividade -->
+    <dialog class="mdl-dialog" id="editatividade-modal">
+        <h4 class="mdl-dialog__title">Editar Atividade</h4>
+        <div class="mdl-dialog__content">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="editatividade-modal-input">
+                <label class="mdl-textfield__label" for="editatividade-modal-input">Nome da atividade</label>
+            </div>
+        </div>
+        <div class="mdl-dialog__actions">
+            <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary" id="editatividade-modal-botao-enviar">Enviar</button>
+            <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close" id="editatividade-modal-botao-fechar">Fechar</button>
+            <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect botao-delete" id="editatividade-modal-botao-excluir">Excluir</button>
+        </div>
+    </dialog>
+
+    <!-- Modal - Faltas -->
+    <dialog class="mdl-dialog mdl-cell mdl-cell--9-col" id="faltas-modal">
+        <h4 class="mdl-dialog__title">Faltas</h4>
+
+        <!-- Lista de atividades -->
+        <div class="mdl-dialog__content mdl-cell mdl-cell--4-col" style="float:left;">
+            <ul class="mdl-list">
+                <a class="mdl-list__item faltas-item-data" href="#">
+                    <span class="mdl-list__item-primary-content">
+                        16/10/2016 15h00
+                    </span>
+                    <i class="material-icons mdl-cell--hide-phone">keyboard_arrow_right</i>
+                </a>
+                <hr class="divider">
+                <a class="mdl-list__item faltas-item-data" href="#">
+                    <span class="mdl-list__item-primary-content">
+                        17/10/2016 15h00
+                    </span>
+                    <i class="material-icons mdl-cell--hide-phone">keyboard_arrow_right</i>
+                </a>
+                <hr class="divider">
+                <a class="mdl-list__item faltas-item-data" href="#">
+                    <span class="mdl-list__item-primary-content">
+                        18/10/2016 15h00
+                    </span>
+                    <i class="material-icons mdl-cell--hide-phone">keyboard_arrow_right</i>
+                </a>
+            </ul>
+        </div>
+
+        <!-- Lista de alunos e notas -->
+        <div class="mdl-dialog__content mdl-cell mdl-cell--8-col mdl-cell--10-col-phone disabled" id="faltas-modal-listaalunos" style="float:right;">
+            <table class="mdl-data-table mdl-js-data-table mdl-cell--12-col faltas-modal-listaalunos-table">
+                <colgroup>
+                    <col width="0%" />
+                    <col width="100%" />
+                    <col width="0%" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th class="mdl-data-table__cell--non-numeric">Matrícula</th>
+                        <th class="mdl-data-table__cell--non-numeric mdl-cell--hide-phone">Nome</th>
+                        <th>Falta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">1234567890</td>
+                        <td class="mdl-data-table__cell--non-numeric nota-nome-aluno mdl-cell--hide-phone">Lohane Vêkanandre Sthephany Smith Bueno de HA HA HA de Raio Laser bala de Icekiss</td>
+                        <td>
+                            <div class="mdl-textfield mdl-js-textfield nota-textfield">
+                                <input type="checkbox" class="mdl-checkbox__input">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">1234567890</td>
+                        <td class="mdl-data-table__cell--non-numeric nota-nome-aluno mdl-cell--hide-phone">Maria da Silva</td>
+                        <td>
+                            <input type="checkbox" class="mdl-checkbox__input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">1234567890</td>
+                        <td class="mdl-data-table__cell--non-numeric nota-nome-aluno mdl-cell--hide-phone">Maria da Silva</td>
+                        <td>
+                            <input type="checkbox" class="mdl-checkbox__input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">1234567890</td>
+                        <td class="mdl-data-table__cell--non-numeric nota-nome-aluno mdl-cell--hide-phone">Maria da Silva</td>
+                        <td>
+                            <input type="checkbox" class="mdl-checkbox__input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">1234567890</td>
+                        <td class="mdl-data-table__cell--non-numeric nota-nome-aluno mdl-cell--hide-phone">Maria da Silva</td>
+                        <td>
+                            <input type="checkbox" class="mdl-checkbox__input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">1234567890</td>
+                        <td class="mdl-data-table__cell--non-numeric nota-nome-aluno mdl-cell--hide-phone">Maria da Silva</td>
+                        <td>
+                            <input type="checkbox" class="mdl-checkbox__input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">1234567890</td>
+                        <td class="mdl-data-table__cell--non-numeric nota-nome-aluno mdl-cell--hide-phone">Maria da Silva</td>
+                        <td>
+                            <input type="checkbox" class="mdl-checkbox__input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">1234567890</td>
+                        <td class="mdl-data-table__cell--non-numeric nota-nome-aluno mdl-cell--hide-phone">Maria da Silva</td>
+                        <td>
+                            <input type="checkbox" class="mdl-checkbox__input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">1234567890</td>
+                        <td class="mdl-data-table__cell--non-numeric nota-nome-aluno mdl-cell--hide-phone">Maria da Silva</td>
+                        <td>
+                            <input type="checkbox" class="mdl-checkbox__input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">1234567890</td>
+                        <td class="mdl-data-table__cell--non-numeric nota-nome-aluno mdl-cell--hide-phone">Maria da Silva</td>
+                        <td>
+                            <input type="checkbox" class="mdl-checkbox__input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">1234567890</td>
+                        <td class="mdl-data-table__cell--non-numeric nota-nome-aluno mdl-cell--hide-phone">Maria da Silva</td>
+                        <td>
+                            <input type="checkbox" class="mdl-checkbox__input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">1234567890</td>
+                        <td class="mdl-data-table__cell--non-numeric nota-nome-aluno mdl-cell--hide-phone">Maria da Silva</td>
+                        <td>
+                            <input type="checkbox" class="mdl-checkbox__input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">1234567890</td>
+                        <td class="mdl-data-table__cell--non-numeric nota-nome-aluno mdl-cell--hide-phone">Maria da Silva</td>
+                        <td>
+                            <input type="checkbox" class="mdl-checkbox__input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">1234567890</td>
+                        <td class="mdl-data-table__cell--non-numeric nota-nome-aluno mdl-cell--hide-phone">Maria da Silva</td>
+                        <td>
+                            <input type="checkbox" class="mdl-checkbox__input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">1234567890</td>
+                        <td class="mdl-data-table__cell--non-numeric nota-nome-aluno mdl-cell--hide-phone">Maria da Silva</td>
+                        <td>
+                            <input type="checkbox" class="mdl-checkbox__input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">1234567890</td>
+                        <td class="mdl-data-table__cell--non-numeric nota-nome-aluno mdl-cell--hide-phone">Maria da Silva</td>
+                        <td>
+                            <input type="checkbox" class="mdl-checkbox__input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">1234567890</td>
+                        <td class="mdl-data-table__cell--non-numeric nota-nome-aluno mdl-cell--hide-phone">Maria da Silva</td>
+                        <td>
+                            <input type="checkbox" class="mdl-checkbox__input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">1234567890</td>
+                        <td class="mdl-data-table__cell--non-numeric nota-nome-aluno mdl-cell--hide-phone">Maria da Silva</td>
+                        <td>
+                            <input type="checkbox" class="mdl-checkbox__input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">1234567890</td>
+                        <td class="mdl-data-table__cell--non-numeric nota-nome-aluno mdl-cell--hide-phone">Maria da Silva</td>
+                        <td>
+                            <input type="checkbox" class="mdl-checkbox__input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">1234567890</td>
+                        <td class="mdl-data-table__cell--non-numeric nota-nome-aluno mdl-cell--hide-phone">Maria da Silva</td>
+                        <td>
+                            <input type="checkbox" class="mdl-checkbox__input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">1234567890</td>
+                        <td class="mdl-data-table__cell--non-numeric nota-nome-aluno mdl-cell--hide-phone">José da Silva</td>
+                        <td>
+                            <input type="checkbox" class="mdl-checkbox__input">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="mdl-dialog__actions" style="clear:both;">
+            <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary" id="faltas-modal-botao-enviar">Enviar</button>
+            <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect" id="faltas-modal-botao-fechar">Fechar</button>
+        </div>
+    </dialog>
+
+    <!-- Modal Materiais -->
+    <dialog class="mdl-dialog mdl-cell mdl-cell--4-col" id="materiais-modal">
+        <h4 class="mdl-dialog__title">Materiais</h4>
+        <div class="mdl-dialog__content">
+            <div id="materiais-div-botoes">
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent" id="materiais-botao-addarquivo">
+                    <i class="material-icons">add</i>
+                </button>
+                <div class="mdl-tooltip" data-mdl-for="materiais-botao-addarquivo">
+                    Adicionar Arquivo
+                </div>
+            </div>
+            <ul class="mdl-list">
+                <a class="mdl-list__item materiais-item" href="#">
+                    <span class="mdl-list__item-primary-content">
+                                Aula1.pdf
+                                </span>
+                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent" id="materiais-botao-editarquivo">
+                        <i class="material-icons">delete_forever</i>
+                    </button>
+                </a>
+                <hr class="divider">
+                <a class="mdl-list__item materiais-item" href="#">
+                    <span class="mdl-list__item-primary-content">
+                            Aula2.pdf
+                            </span>
+                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent" id="materiais-botao-editarquivo">
+                        <i class="material-icons">delete_forever</i>
+                    </button>
+                </a>
+                <hr class="divider">
+                <a class="mdl-list__item materiais-item" href="#">
+                    <span class="mdl-list__item-primary-content">
+                            Aula3.pdf
+                            </span>
+                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent" id="materiais-botao-editarquivo">
+                        <i class="material-icons">delete_forever</i>
+                    </button>
+                </a>
+            </ul>
+        </div>
+        <div class="mdl-dialog__actions">
+            <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close" id="materiais-modal-botao-fechar">Fechar</button>
+        </div>
+    </dialog>
+
+    <!-- Modal Upload Arquivo -->
+    <dialog class="mdl-dialog" id="uploadarquivo-modal">
+        <h4 class="mdl-dialog__title">Adicionar Arquivo</h4>
+        <div class="mdl-dialog__content">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--file">
+                <input class="mdl-textfield__input" placeholder="Arquivo" type="text" id="uploadarquivo-modal-nomearquivo" readonly/>
+                <div class="mdl-button mdl-button--primary mdl-button--icon mdl-button--file">
+                    <i class="material-icons">attach_file</i><input type="file" id="uploadarquivo-modal-botao">
+                </div>
+            </div>
+        </div>
+        <div class="mdl-dialog__actions">
+            <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary" id="uploadarquivo-modal-botao-enviar">Enviar</button>
+            <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close" id="uploadarquivo-modal-botao-fechar">Fechar</button>
+        </div>
+    </dialog>
+
+
+
+    <!-- Modal - Questoes -->
+    <dialog class="mdl-dialog mdl-cell mdl-cell--9-col" id="questoes-modal">
+        <h4 class="mdl-dialog__title">Questões</h4>
+
+        <!-- Lista de atividades -->
+        <div class="mdl-dialog__content mdl-cell mdl-cell--4-col" style="float:left;">
+            <div id="questoes-div-botoes">
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent" id="questoes-botao-addtema">
+                    <i class="material-icons">add</i>
+                </button>
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent disabled" id="questoes-botao-edittema">
+                    <i class="material-icons">edit</i>
+                </button>
+                <div class="mdl-tooltip" data-mdl-for="questoes-botao-addtema">
+                    Adicionar Tema
+                </div>
+                <div class="mdl-tooltip" data-mdl-for="questoes-botao-edittema">
+                    Editar Tema
+                </div>
+            </div>
+            <ul class="mdl-list">
+                <a class="mdl-list__item temas-item" href="#">
+                    <span class="mdl-list__item-primary-content">Ácidos</span>
+                    <i class="material-icons mdl-cell--hide-phone">keyboard_arrow_right</i>
+                </a>
+                <hr class="divider">
+                <a class="mdl-list__item temas-item" href="#">
+                    <span class="mdl-list__item-primary-content">Bases</span>
+                    <i class="material-icons mdl-cell--hide-phone">keyboard_arrow_right</i>
+                </a>
+                <hr class="divider">
+                <a class="mdl-list__item temas-item" href="#">
+                    <span class="mdl-list__item-primary-content">Sais</span>
+                    <i class="material-icons mdl-cell--hide-phone">keyboard_arrow_right</i>
+                </a>
+            </ul>
+        </div>
+
+        <!-- Lista de questoes -->
+        <div class="mdl-dialog__content mdl-cell mdl-cell--8-col mdl-cell--10-col-phone disabled" id="questoes-modal-listaalunos"
+            style="float:right;">
+            <div id="questoes-div-botoes">
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent" id="questoes-botao-addquestao">
+                    <i class="material-icons">add</i>
+                </button>
+                <div class="mdl-tooltip" data-mdl-for="questoes-botao-addquestao">
+                    Adicionar Questao
+                </div>
+            </div>
+            <ul class="mdl-list">
+                <a class="mdl-list__item questoes-item" href="#">
+                    <span class="mdl-list__item-primary-content">Lorem ipsum dolor 1</span>
+                </a>
+                <hr class="divider">
+                <a class="mdl-list__item questoes-item" href="#">
+                    <span class="mdl-list__item-primary-content">Lorem ipsum dolor 2</span>
+                </a>
+                <hr class="divider">
+                <a class="mdl-list__item questoes-item" href="#">
+                    <span class="mdl-list__item-primary-content">Lorem ipsum dolor 3</span>
+                </a>
+            </ul>
+        </div>
+        <div class="mdl-dialog__actions" style="clear:both;">
+            <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary" id="questoes-modal-botao-enviar">Enviar</button>
+            <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect" id="questoes-modal-botao-fechar">Fechar</button>
+        </div>
+    </dialog>
+
+    <!-- Modal Adicionar Questão -->
+    <dialog class="mdl-dialog mdl-dialog mdl-cell mdl-cell--5-col" id="addquestao-modal">
+        <h4 class="mdl-dialog__title">Adicionar Questão</h4>
+        <div class="mdl-dialog__content">
+
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+                <input class="mdl-textfield__input" type="text" id="sample3">
+                <label class="mdl-textfield__label" for="sample3">Título da Questão</label>
+            </div>
+            <br>
+            <div id="alternativas" class="mdl-cell mdl-cell--8-col">
+                <label class="mdl-radio mdl-js-radio mdl-cell mdl-cell--12-col" for="option1">
+                    <input type="radio" id="option1" name="gender" class="mdl-radio__button">
+                    <div class="mdl-textfield mdl-js-textfield alternativas-item">
+                        <input class="mdl-textfield__input" type="text" id="questao_alternativa1">
+                        <label class="mdl-textfield__label alternativas-item-label" for="questao_alternativa1">Alternativa 1</label>
+            </div>
+            </label>
+            <br>
+            <label class="mdl-radio mdl-js-radio mdl-cell mdl-cell--12-col" for="option2">
+                    <input type="radio" id="option2" name="gender" class="mdl-radio__button">
+                    <div class="mdl-textfield mdl-js-textfield alternativas-item">
+                        <input class="mdl-textfield__input" type="text" id="questao_alternativa1">
+                        <label class="mdl-textfield__label alternativas-item-label" for="questao_alternativa1">Alternativa 2</label>
+        </div>
+        </label>
+        <br>
+        <label class="mdl-radio mdl-js-radio mdl-cell mdl-cell--12-col" for="option3">
+                    <input type="radio" id="option3" name="gender" class="mdl-radio__button">
+                    <div class="mdl-textfield mdl-js-textfield alternativas-item">
+                        <input class="mdl-textfield__input" type="text" id="questao_alternativa1">
+                        <label class="mdl-textfield__label alternativas-item-label" for="questao_alternativa1">Alternativa 3</label>
+        </div>
+        </label>
+        <br>
+        <label class="mdl-radio mdl-js-radio mdl-cell mdl-cell--12-col" for="option4">
+                    <input type="radio" id="option4" name="gender" class="mdl-radio__button">
+                    <div class="mdl-textfield mdl-js-textfield alternativas-item">
+                        <input class="mdl-textfield__input" type="text" id="questao_alternativa1">
+                        <label class="mdl-textfield__label alternativas-item-label" for="questao_alternativa1">Alternativa 4</label>
+        </div>
+        </label>
+        <br>
+        <label class="mdl-radio mdl-js-radio mdl-cell mdl-cell--12-col" for="option5">
+                    <input type="radio" id="option5" name="gender" class="mdl-radio__button">
+                    <div class="mdl-textfield mdl-js-textfield alternativas-item">
+                        <input class="mdl-textfield__input" type="text" id="questao_alternativa1">
+                        <label class="mdl-textfield__label alternativas-item-label" for="questao_alternativa1">Alternativa 5</label>
+        </div>
+        </label>
+        </div>
+
+        </div>
+        <div class="mdl-dialog__actions">
+            <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary" id="addquestao-modal-botao-enviar">Enviar</button>
+            <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close" id="addquestao-modal-botao-fechar">Fechar</button>
+        </div>
+    </dialog>
+
+
+    <!-- Modal Editar Questão -->
+    <dialog class="mdl-dialog mdl-dialog mdl-cell mdl-cell--5-col" id="editquestao-modal">
+        <h4 class="mdl-dialog__title">Editar Questão</h4>
+        <div class="mdl-dialog__content">
+
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+                <input class="mdl-textfield__input" type="text" id="editquestao-modal-tituloinput">
+                <label class="mdl-textfield__label" for="editquestao-modal-tituloinput">Título da Questão</label>
+            </div>
+            <br>
+            <div id="alternativas" class="mdl-cell mdl-cell--8-col">
+                <label class="mdl-radio mdl-js-radio mdl-cell mdl-cell--12-col" for="option1">
+                    <input type="radio" id="option1" name="gender" class="mdl-radio__button">
+                    <div class="mdl-textfield mdl-js-textfield alternativas-item">
+                        <input class="mdl-textfield__input" type="text" id="questao_alternativa1">
+                        <label class="mdl-textfield__label alternativas-item-label" for="questao_alternativa1">Alternativa 1</label>
+            </div>
+            </label>
+            <br>
+            <label class="mdl-radio mdl-js-radio mdl-cell mdl-cell--12-col" for="option2">
+                    <input type="radio" id="option2" name="gender" class="mdl-radio__button">
+                    <div class="mdl-textfield mdl-js-textfield alternativas-item">
+                        <input class="mdl-textfield__input" type="text" id="questao_alternativa1">
+                        <label class="mdl-textfield__label alternativas-item-label" for="questao_alternativa1">Alternativa 2</label>
+        </div>
+        </label>
+        <br>
+        <label class="mdl-radio mdl-js-radio mdl-cell mdl-cell--12-col" for="option3">
+                    <input type="radio" id="option3" name="gender" class="mdl-radio__button">
+                    <div class="mdl-textfield mdl-js-textfield alternativas-item">
+                        <input class="mdl-textfield__input" type="text" id="questao_alternativa1">
+                        <label class="mdl-textfield__label alternativas-item-label" for="questao_alternativa1">Alternativa 3</label>
+        </div>
+        </label>
+        <br>
+        <label class="mdl-radio mdl-js-radio mdl-cell mdl-cell--12-col" for="option4">
+                    <input type="radio" id="option4" name="gender" class="mdl-radio__button">
+                    <div class="mdl-textfield mdl-js-textfield alternativas-item">
+                        <input class="mdl-textfield__input" type="text" id="questao_alternativa1">
+                        <label class="mdl-textfield__label alternativas-item-label" for="questao_alternativa1">Alternativa 4</label>
+        </div>
+        </label>
+        <br>
+        <label class="mdl-radio mdl-js-radio mdl-cell mdl-cell--12-col" for="option5">
+                    <input type="radio" id="option5" name="gender" class="mdl-radio__button">
+                    <div class="mdl-textfield mdl-js-textfield alternativas-item">
+                        <input class="mdl-textfield__input" type="text" id="questao_alternativa1">
+                        <label class="mdl-textfield__label alternativas-item-label" for="questao_alternativa1">Alternativa 5</label>
+        </div>
+        </label>
+        </div>
+
+        </div>
+        <div class="mdl-dialog__actions">
+            <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary" id="editquestao-modal-botao-enviar">Enviar</button>
+            <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close" id="editquestao-modal-botao-fechar">Fechar</button>
+            <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect botao-delete" id="editquestao-modal-botao-excluir">Excluir Questão</button>
+        </div>
+    </dialog>
+
+    <!-- Modal Add Tema -->
+    <dialog class="mdl-dialog" id="addtema-modal">
+        <h4 class="mdl-dialog__title">Novo Tema</h4>
+        <div class="mdl-dialog__content">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="sample3">
+                <label class="mdl-textfield__label" for="sample3">Nome do tema</label>
+            </div>
+        </div>
+        <div class="mdl-dialog__actions">
+            <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary" id="addtema-modal-botao-enviar">Enviar</button>
+            <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close" id="addtema-modal-botao-fechar">Fechar</button>
+        </div>
+    </dialog>
+
+    <!-- Modal Edit Tema -->
+    <dialog class="mdl-dialog" id="edittema-modal">
+        <h4 class="mdl-dialog__title">Editar Tema</h4>
+        <div class="mdl-dialog__content">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="edittema-modal-input">
+                <label class="mdl-textfield__label" for="edittema-modal-input">Nome do tema</label>
+            </div>
+        </div>
+        <div class="mdl-dialog__actions">
+            <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary" id="edittema-modal-botao-enviar">Enviar</button>
+            <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect close" id="edittema-modal-botao-fechar">Fechar</button>
+            <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect botao-delete" id="edittema-modal-botao-excluir">Excluir</button>
+        </div>
+    </dialog>
+
+</body>
+
+</html>
